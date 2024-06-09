@@ -363,7 +363,7 @@ root@f65be1987f84:~# nano helloworld.txt
 5. Edit your helloworld.txt, create your messsage and save by typing ctrl-X. Once saved, explore using the container to see where the file is located. Then exit the shell, by typing **exit**.
 
 6. Stop the container and run **docker ps -a**, and restart the container again. Is your file in the container still available?
-```bash 
+```bash (YES)
 @joeynor ➜ /workspaces/OSProject (main) $ docker stop romantic_jackson
 
 @joeynor ➜ /workspaces/OSProject (main) $ docker ps -a
@@ -387,8 +387,8 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __Fill answer here__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Fill answer here__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** __No, Files within a container are not persistent by default because containers are designed to be ephemeral and stateless. They are intended to be lightweight and disposable, allowing for easy deployment and scaling__.
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Yes, docker enables the concurrent execution of multiple Debian Linux instances within separate containers. Each instance operates independently and in isolation from the others, offering flexibility and scalability to your environment.__.
 
 ## Running your own container with persistent storage
 
@@ -407,14 +407,20 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __Fill answer here__.
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __@gmuslih ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
+total 4
+-rw-rw-rw- 1 codespace codespace 11 Jun  9 14:57 testfile.txt
+User: root Group:root__.
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+*** __Yes, we can change the permission to user codespace instead of root.
+@gmuslih ➜ /workspaces/OSProject/myroot (main) $ sudo chown -R codespace:codespace /workspaces/OSProject/myroot
+@gmuslih ➜ /workspaces/OSProject/myroot (main) $ ls -1
+testfile.txt__.***
 
 ## You are on your own, create your own static webpage
 
