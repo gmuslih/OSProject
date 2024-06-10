@@ -55,9 +55,12 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** ```bash Ubuntu Linux```.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __```bash 1. 8 GB RAM, and 32 GB storage 2. 64 GB RAM, and 128 GB storage```__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __``` Make sure our changes is saved to the main repository```__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
+``` Ubuntu Linux```.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
+__``` 1. 8 GB RAM, and 32 GB storage 2. 64 GB RAM, and 128 GB storage```__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
+__``` Make sure our changes is saved to the main repository```__.
 
 ## Exploring the Terminal
 
@@ -74,8 +77,8 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __@gmuslih ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject__.
+1. Run the command **pwd** . ***(1 mark)*** __``` @gmuslih ➜ /workspaces/OSProject (main) $ pwd
+/workspaces/OSProject ```__.
 2. Run the command **cat /etc/passwd** . ***(1 mark)*** __@gmuslih ➜ /workspaces/OSProject (main) $ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
