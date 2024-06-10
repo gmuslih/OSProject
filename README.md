@@ -25,10 +25,13 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __https://github.com/gmuslih/OSProject__.
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** 
+``` bash
+https://github.com/gmuslih/OSProject
+``` 
 2. How many files and folders are in this repository. ***(1 mark)*** 
 ```bash
- answer 
+ The GitHub repository shown in the image contains 4 folders named “images,” “myroot,” “nodejs-app,” and “webpage.” Additionally, there is 1 file named “README.md.” 
  ```
 
 
