@@ -759,11 +759,21 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** 
 ```bash
- answer 
+ @gmuslih ➜ /workspaces/OSProject/nodejs-app (main) $ curl http://localhost:3000/random
+Server Error@gmuslih ➜ /workspaces/OSProject/nodejs-app (main) $  The "Server Error" message indicates a problem with the Node.js application, possibly due to issues with database connectivity or query execution.
  ```
 2. Show the instruction needed to make this work. ***(1 mark)*** 
 ```bash
- answer 
+To resolve the "Server Error" message, follow these steps:
+
+Check the logs of the Node.js application container for any error messages.
+Verify the configuration in the Node.js application code to ensure it correctly connects to the MySQL database.
+Confirm that the MySQL database container is running and accessible.
+Address any errors or misconfigurations found in the Node.js application code.
+These steps should help diagnose and resolve the issue causing the server error.
+
+@gmuslih ➜ /workspaces/OSProject/nodejs-app (main) $ docker network connect bridgenet mysql-container
+@gmuslih ➜ /workspaces/OSProject/nodejs-app (main) $ docker network connect bridgenet nodejs-container 
  ```
 
 
