@@ -61,7 +61,7 @@ Ubuntu Linux
 ```
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
 ``` bash
-1. 8 GB RAM, and 32 GB storage 2. 64 GB RAM, and 128 GB storage
+8 GB RAM, and 32 GB storage 2. 64 GB RAM, and 128 GB storage
 ```
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
 ``` bash 
@@ -83,9 +83,14 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __``` @gmuslih ➜ /workspaces/OSProject (main) $ pwd
-/workspaces/OSProject ```__.
-2. Run the command **cat /etc/passwd** . ***(1 mark)*** __@gmuslih ➜ /workspaces/OSProject (main) $ cat /etc/passwd
+1. Run the command **pwd** . ***(1 mark)*** 
+``` bash 
+@gmuslih ➜ /workspaces/OSProject (main) $ pwd
+/workspaces/OSProject 
+```
+2. Run the command **cat /etc/passwd** . ***(1 mark)*** 
+``` bash
+@gmuslih ➜ /workspaces/OSProject (main) $ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
@@ -217,20 +222,32 @@ shm                65536        8     65528   1% /dev/shm
 68      ./.git/hooks
 2760    ./.git
 4756    .__.
-5. Run the command **ls** . ***(1 mark)*** __@gmuslih ➜ /workspaces/OSProject (main) $ ls
-README.md  images__.
-6. Run the command **ls -asl** . ***(1 mark)*** __@gmuslih ➜ /workspaces/OSProject (main) $ ls -asl
+```
+5. Run the command **ls** . ***(1 mark)*** 
+``` bash
+@gmuslih ➜ /workspaces/OSProject (main) $ ls
+README.md  images
+```
+6. Run the command **ls -asl** . ***(1 mark)*** 
+``` bash
+@gmuslih ➜ /workspaces/OSProject (main) $ ls -asl
 total 40
  4 drwxrwxrwx+ 4 codespace root  4096 Jun  9 12:48 .
  4 drwxr-xrwx+ 5 codespace root  4096 Jun  9 12:48 ..
  4 drwxrwxrwx+ 9 codespace root  4096 Jun  9 12:57 .git
 24 -rw-rw-rw-  1 codespace root 21880 Jun  9 13:01 README.md
- 4 drwxrwxrwx+ 2 codespace root  4096 Jun  9 12:48 images__.
-7. Run the command **free -h** . ***(1 mark)*** __@gmuslih ➜ /workspaces/OSProject (main) $ free -h
+ 4 drwxrwxrwx+ 2 codespace root  4096 Jun  9 12:48 images
+ ```
+7. Run the command **free -h** . ***(1 mark)*** 
+``` bash
+@gmuslih ➜ /workspaces/OSProject (main) $ free -h
               total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.4Gi       184Mi       1.0Mi       6.1Gi       6.0Gi
-Swap:            0B          0B          0B__.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __@gmuslih ➜ /workspaces/OSProject (main) $ cat /proc/cpuinfo
+Swap:            0B          0B          0B
+``` 
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** 
+``` bash
+@gmuslih ➜ /workspaces/OSProject (main) $ cat /proc/cpuinfo
 processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -285,8 +302,11 @@ TLB size        : 2560 4K pages
 clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
-power management:__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __@gmuslih ➜ /workspaces/OSProject (main) $top 
+power management:
+```
+9. Run the command **top** and type **q** to quit. ***(1 mark)*** 
+``` bash
+@gmuslih ➜ /workspaces/OSProject (main) $top 
 processor       : 1
 vendor_id       : AuthenticAMD
 cpu family      : 25
@@ -324,19 +344,44 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6172.9 avail Mem
      49 root      20   0   12196   3484   2560 S   0.0   0.0   0:00.00 sshd               
     900 root      20   0 1983432  84940  52352 S   0.0   1.0   0:00.22 dockerd            
     907 root      20   0 1725100  48072  30336 S   0.0   0.6   0:00.25 containerd         
-   1613 codespa+  20   0    2616   1408   1408 S   0.0   0.0   0:00.01 sh    __.
-10. Run the command **uname -a**. ***(1 mark)*** __@gmuslih ➜ /workspaces/OSProject (main) $ uname -a
-Linux codespaces-d879a2 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
-11. What is the available free memory in the system. ***(1 mark)*** __Free memory: 166Mi Available memory:6.0Gi__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __20G__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Version: Ubuntu 20.04.6 LTS with kernel version 6.5.0-1021-azure Hardware Arhitecture: x86_64__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __ls:only lists the names of files and directories
-ls -asl:   provides a detailed listing including file permissions, ownership, size, and modification time, along with the names__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __2560 4K pages__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __cpu MHz         : 3243.839__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Process: node
+   1613 codespa+  20   0    2616   1408   1408 S   0.0   0.0   0:00.01 sh
+   ``` 
+10. Run the command **uname -a**. ***(1 mark)*** 
+``` bash
+@gmuslih ➜ /workspaces/OSProject (main) $ uname -a
+Linux codespaces-d879a2 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+``` 
+11. What is the available free memory in the system. ***(1 mark)*** 
+``` bash
+Free memory: 166Mi Available memory:6.0Gi
+``` 
+12. What is the available disk space mounted on /workspace. ***(1 mark)*** 
+``` bash
+20G
+```
+13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
+``` bash
+Version: Ubuntu 20.04.6 LTS with kernel version 6.5.0-1021-azure Hardware Arhitecture: x86_64
+``` 
+14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** 
+``` bash
+ls:only lists the names of files and directories
+ls -asl:   provides a detailed listing including file permissions, ownership, size, and modification time, along with the names
+``` 
+15. What is the TLB size of the Virtual CPU. ***(1 mark)*** 
+``` bash
+2560 4K pages
+``` 
+16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** 
+``` bash
+cpu MHz         : 3243.839
+``` 
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** 
+``` bash
+Process: node
 PID: 2266
-%CPU: 1.3__.
+%CPU: 1.3
+``` 
 
 ## Running your own container instance.
 
@@ -396,8 +441,14 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
 
 ***Questions:***
 
-1. Are files in the container persistent. Why not?. ***(1 mark)*** __No, Files within a container are not persistent by default because containers are designed to be ephemeral and stateless. They are intended to be lightweight and disposable, allowing for easy deployment and scaling__.
-2. Can we run two, or three instances of debian linux? . ***(1 mark)*** __Yes, docker enables the concurrent execution of multiple Debian Linux instances within separate containers. Each instance operates independently and in isolation from the others, offering flexibility and scalability to your environment.__.
+1. Are files in the container persistent. Why not?. ***(1 mark)*** 
+``` bash
+No, Files within a container are not persistent by default because containers are designed to be ephemeral and stateless. They are intended to be lightweight and disposable, allowing for easy deployment and scaling
+``` 
+2. Can we run two, or three instances of debian linux? . ***(1 mark)*** 
+``` bash
+Yes, docker enables the concurrent execution of multiple Debian Linux instances within separate containers. Each instance operates independently and in isolation from the others, offering flexibility and scalability to your environment.
+``` 
 
 ## Running your own container with persistent storage
 
@@ -416,20 +467,27 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 ***Questions:***
 
-1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** __@gmuslih ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
+1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)*** 
+``` bash
+@gmuslih ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
 total 4
 -rw-rw-rw- 1 codespace codespace 11 Jun  9 14:57 testfile.txt
-User: root Group:root__.
+User: root Group:root
+``` 
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
 //use sudo and chown
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Yes, we can change the permission to user codespace instead of root.
+``` bash
+*** 
+Yes, we can change the permission to user codespace instead of root.
 @gmuslih ➜ /workspaces/OSProject/myroot (main) $ sudo chown -R codespace:codespace /workspaces/OSProject/myroot
 @gmuslih ➜ /workspaces/OSProject/myroot (main) $ ls -1
-testfile.txt__.***
+testfile.txt
+***
+``` 
 
 ## You are on your own, create your own static webpage
 
