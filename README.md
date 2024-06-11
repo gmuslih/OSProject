@@ -70,7 +70,7 @@ Ubuntu Linux
 ```
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** 
 ``` bash
-8 GB RAM, and 32 GB storage 2. 64 GB RAM, and 128 GB storage
+1. 8 GB RAM, and 32 GB storage 2. 64 GB RAM, and 128 GB storage
 ```
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** 
 ``` bash 
